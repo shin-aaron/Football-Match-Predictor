@@ -28,7 +28,7 @@ class Predictor:
         #     print(f"Predicted: {predictions[i]}  |  Actual: {y_test.iloc[i]}")
         
         accuracy = accuracy_score(y_test, predictions)
-        # print(f"Accuracy: {accuracy:.2%}")
+        print(f"Accuracy: {accuracy:.2%}")
     
     def predict_match(self, home_team, away_team):
         last_index = len(self.fe.data)
